@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vedukah</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+    </head>
+    <style>
+
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+    
+    
+    
+    .sign-up-form{
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,1);
+    background: rgb(151, 140, 140);
+    padding: 20px;
+    margin: 13% auto 0;
+    text-align:center;
+    border: 2px;
+    }
+    
+    .sign-up-form h1{
+    color: var(--yellow);
+    /*color: red;*/
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
+    
+    .input-box{
+    border-radius: 20px;
+    padding: 10px;
+   margin: 10px 0;
+  
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+    }
+    
+    button{
+    background-color: var(--yellow);
+    width: 90px;
+    color: black;
+    
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+	
+    
+    </style>
+    <body>
+        <div id="container">
+        <!-- header -->
+        <header class = "header" id = "header">
+            
+            
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>GEEKPROBIN</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+            <div class = "head-bottom flex">   
+                <h2>NICE AND COMFORTABLE PLACE TO CELEBRATE</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est quos veniam impedit numquam itaque voluptatum, dicta asperiores accusamus, eligendi neque ut incidunt, modi harum molestiae atque natus officia minima.</p>
+                <div >
+                    <a href="sub_interface.html"><button id = "some2"type = "button" class = "btn btn1" onclick="BookNow()" style="border-color: none; background-color: var(--yellow); padding: 10px;">Book Now</button></a>
+                    <a href="sign_in_firebase.html" style="text-decoration: none; font-style:bold; "><button class = "btn log-in" id="login_id"style="border-color: none; background-color: var(--yellow); padding:10px;">log in</button></a>
+                </div>
+            </div> 
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn row" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+            <ul class = "navbar row-cols-1">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <ul class="navbar row">
+                <button type="submit" id="logOut" name="logOut">Log out</button>
+            </ul>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+        
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
+                        <button class = "btn log-in" style="border-color: none; background-color: var(--yellow);">KNOW MORE</button>
+
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
+                        <button class = "btn log-in" style="border-color: none; background-color: var(--yellow);">KNOW MORE</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
+                        <button class = "btn log-in" style="border-color: none; background-color: var(--yellow);">KNOW MORE</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
+                        <button class = "btn log-in" style="border-color: none; background-color: var(--yellow);">KNOW MORE</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button class = "btn log-in" style="border-color: none; background-color: var(--yellow);">BOOK NOW</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button class = "btn log-in" style="border-color: none; background-color: var(--yellow);">BOOK NOW</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button class = "btn log-in" style="border-color: none; background-color: var(--yellow);">BOOK NOW</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, San Francisco, California, USA
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        </div>
+        
+        
+    </body>
+</html>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signOut
+    } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+    import {getDatabase, set, ref, update} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+    apiKey: "AIzaSyC323PrCa-P-0bQG3u3DCwyWHoh5GZr9dE",
+    authDomain: "login-with-firebase-4d993.firebaseapp.com",
+    projectId: "login-with-firebase-4d993",
+    storageBucket: "login-with-firebase-4d993.appspot.com",
+    messagingSenderId: "799656531848",
+    appId: "1:799656531848:web:7d7cb95eaabcd134304c3d"
+  };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const database = getDatabase(app);
+
+    logOut.addEventListener('click', (e) => {
+
+        // sign out user
+        signOut(auth).then(() => {
+            alert("abcd");
+            window.location.href = 'sign_in_firebase.html'
+               // Sign-out successful.
+        }).catch((error) => {
+            // An error happened.
+        });
+    });
+        
+
+</script>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+</script>
+<script>
+    $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+</script>
+<script src="script.js"></script>
